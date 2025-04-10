@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import styles from "./FlipCoin.module.css";
 import headsImg from "../../assets/heads.svg";
 import tailsImg from "../../assets/tails.svg";
