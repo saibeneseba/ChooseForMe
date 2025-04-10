@@ -8,6 +8,7 @@ const Home = () => {
         <p>Elegí una herramienta del destino desde la barra superior.</p>
       </section>
     </main>
+    
   );
 };
 

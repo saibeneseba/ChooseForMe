@@ -2,6 +2,8 @@ import { useState, useRef } from "react";
 import styles from "./FlipCoin.module.css";
 import headsImg from "../../assets/heads.svg";
 import tailsImg from "../../assets/tails.svg";
+import BackButton from "../BackButton";
+
 
 const FlipCoin = () => {
   const [headsCount, setHeadsCount] = useState(0);
@@ -17,7 +19,7 @@ const FlipCoin = () => {
 
     // Reset animation
     setAnimationClass("");
-    void coinRef.current.offsetWidth; // fuerza el reinicio de animación
+    void coinRef.current.offsetWidth;
 
     setIsFlipping(true);
 
@@ -39,6 +41,10 @@ const FlipCoin = () => {
   };
 
   return (
+<div className={styles.wrapper}>
+  <div className={styles.topCenter}>
+    <BackButton />
+  </div>
     <div className={styles.container}>
       <div className={styles.stats}>
         <p>Heads: {headsCount}</p>
@@ -66,6 +72,7 @@ const FlipCoin = () => {
           Reset
         </button>
       </div>
+    </div>
     </div>
   );
 };

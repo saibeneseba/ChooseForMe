@@ -1,3 +1,10 @@
+.topCenter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    z-index: 10;
+  }
 .container {
     background-color: #ffffff;
     width: 400px;
