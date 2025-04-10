@@ -4,8 +4,8 @@ const Home = () => {
   return (
     <main className={styles.home}>
       <section className={styles.content}>
-        <h1>¡Bienvenido a Me la Juego!</h1>
-        <p>Elegí una herramienta del destino desde la barra superior.</p>
+        <h1>¡Welcome to Choose for Me!</h1>
+        <p>Choose a tool from the top bar and let fate decide for you.</p>
       </section>
     </main>
     
