@@ -1,0 +1,106 @@
+.container {
+    background-color: #ffffff;
+    width: 400px;
+    padding: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 15px 30px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    perspective: 300px;
+  }
+  
+  .stats {
+    text-align: right;
+    color: #101020;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  
+  .coin {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: 50px auto;
+    transform-style: preserve-3d;
+  }
+  
+  .coin img {
+    width: 145px;
+  }
+  
+  .heads,
+  .tails {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .tails {
+    transform: rotateX(180deg);
+  }
+  
+  /* Animaciones */
+  @keyframes spin-heads {
+    0% {
+      transform: rotateX(0);
+    }
+    100% {
+      transform: rotateX(2160deg);
+    }
+  }
+  
+  @keyframes spin-tails {
+    0% {
+      transform: rotateX(0);
+    }
+    100% {
+      transform: rotateX(1980deg);
+    }
+  }
+  
+  .spinHeads {
+    animation-name: spin-heads;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  }
+  
+  .spinTails {
+    animation-name: spin-tails;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flipButton,
+  .resetButton {
+    width: 120px;
+    padding: 10px 0;
+    border: 2.5px solid #3a1b1b;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .flipButton {
+    background-color: #3a1b1b;
+    color: #ffffff;
+  }
+  
+  .flipButton:disabled {
+    background-color: #7a3a3a;
+    border-color: #7a3a3a;
+    color: #ffffff;
+  }
+  
+  .resetButton {
+    background-color: #ffffff;
+    border-color: #3a1b1b;
+    color: #3a1b1b;
+  }
+  
